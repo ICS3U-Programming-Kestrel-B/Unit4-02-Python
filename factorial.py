@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Created By: Kestrel Bryce
-# Date: Oct. 26, 2022
+# Date: Oct. 31, 2022
 # This program asks for a number
 # and shows all the steps leading up to
 # the factorial as well as the number's
@@ -35,23 +35,24 @@ def main():
     except ValueError:
         print("\n")
         print(("Please enter a positive number."))
-    finally:
+    else:
         print("")
 
-        # checking that user_num_int is positive
-        if user_num_int <= 0:
-            print("Please enter a positive number.")
-
         # output
-        while counter <= user_num_int:
+        while True:
+            #while counter <= user_num_int:
             # updating factorial_num
             factorial_num = factorial_num * counter
             # printing the numbers
             print(("{}").format(factorial_num))
             # incrementing counter
             counter = counter + 1
-        else:
-            print(("The factorial is {}").format(factorial_num))
+            # ending loop
+            #break
+            if counter > user_num_int:
+                break
+        # ending remark
+        print(("The factorial is {}").format(factorial_num))
 
 
 if __name__ == "__main__":
