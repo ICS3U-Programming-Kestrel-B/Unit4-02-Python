@@ -40,7 +40,7 @@ def main():
 
         # output
         while True:
-            #while counter <= user_num_int:
+            # while counter <= user_num_int:
             # updating factorial_num
             factorial_num = factorial_num * counter
             # printing the numbers
@@ -48,7 +48,7 @@ def main():
             # incrementing counter
             counter = counter + 1
             # ending loop
-            #break
+            # break
             if counter > user_num_int:
                 break
         # ending remark
